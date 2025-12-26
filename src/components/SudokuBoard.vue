@@ -121,9 +121,7 @@ function idxOf(r: number, c: number) {
   return r * 9 + c;
 }
 
-function isCellSelected(idx: number) {
-  return selectedSet.value.has(idx);
-}
+
 
 function isRowSelected(r: number) {
   for (const i of selectedSet.value) if (Math.floor(i / 9) === r) return true;
